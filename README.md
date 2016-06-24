@@ -1,6 +1,6 @@
 # Redir.js
 
-Redir.js is client-side redirect plugin for each devices.
+Redir.js is client-side redirect for each devices.
 
 ## Downlaod
 
@@ -19,7 +19,7 @@ Please put the tag of granted the class attribute `.js-redir`
 
 **Example**
 ```
-<a class="js-redir">Goto PC site</a>
+<a class="js-redir"></a>
 ```
 
 > Element that have this class will be hidden if UA is a PC.
@@ -39,11 +39,14 @@ this.isSp = /Android|iPhone|iPad/.test(ua)
 ### Relative path
 
 `this.relativePath = true`  
+
+#### TRUE
+
 Before: http://example.com/path/  
 After: http://example.com/path/sp/
 
+#### FALSE
 
-`this.relativePath = false`  
 Before: http://example.com/path/  
 After: http://example.com/sp/path/
 
@@ -53,5 +56,4 @@ After: http://example.com/sp/path/
 `1.0.0` / Mar 31, 2016
 
 ## License
-
 Copyright(c) 2016 Hiroki ISHIWATARI
